@@ -40,7 +40,7 @@ public class MouseControl : MonoBehaviour
     void Update()
     {
         // mouse control only available when contol panel open and mouse not over a button
-        if (controlsPanel.gameObject.activeSelf)
+        if (controlsPanel.gameObject.activeSelf && !ButtonDetector.isPointerOverButton)
         {
             Vector3 dist = Input.mousePosition - lastMousePosition;
             lastMousePosition = Input.mousePosition;

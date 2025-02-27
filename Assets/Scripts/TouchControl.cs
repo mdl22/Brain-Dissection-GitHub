@@ -23,7 +23,7 @@ public class TouchControl : MonoBehaviour
     void Update()
     {
         // touch control only available when contol panel is open and mouse not over a button
-        if (controlsPanel.gameObject.activeSelf)
+        if (controlsPanel.gameObject.activeSelf && !ButtonDetector.isPointerOverButton)
         {
             switch (Input.touchCount)
             {

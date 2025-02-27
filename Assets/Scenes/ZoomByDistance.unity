@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 65470184}
   - component: {fileID: 65470183}
   - component: {fileID: 65470182}
+  - component: {fileID: 65470186}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -652,6 +653,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &65470186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65470181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &72580099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1749,7 @@ GameObject:
   - component: {fileID: 469113851}
   - component: {fileID: 469113850}
   - component: {fileID: 469113849}
+  - component: {fileID: 469113852}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -1820,6 +1834,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1010161052}
+        m_TargetAssemblyTypeName: ButtonDetector, Assembly-CSharp
+        m_MethodName: SetIsPointerOverButtonFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &469113850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,6 +1884,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469113846}
   m_CullTransparentMesh: 1
+--- !u!114 &469113852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469113846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &489777633
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,6 +2535,7 @@ GameObject:
   - component: {fileID: 618678043}
   - component: {fileID: 618678042}
   - component: {fileID: 618678041}
+  - component: {fileID: 618678045}
   m_Layer: 5
   m_Name: FimbriaFornixPathway Button
   m_TagString: Untagged
@@ -2703,6 +2742,18 @@ RectTransform:
   m_AnchoredPosition: {x: -40, y: 80}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &618678045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618678040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &635247181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,6 +3592,7 @@ GameObject:
   - component: {fileID: 908643782}
   - component: {fileID: 908643781}
   - component: {fileID: 908643780}
+  - component: {fileID: 908643783}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -3612,7 +3664,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 908643781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1010161050}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ResetAreasPanel
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1010161052}
+        m_TargetAssemblyTypeName: ButtonDetector, Assembly-CSharp
+        m_MethodName: SetIsPointerOverButtonFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &908643781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,6 +3727,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908643778}
   m_CullTransparentMesh: 1
+--- !u!114 &908643783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908643778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &908892374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,6 +3751,7 @@ GameObject:
   - component: {fileID: 908892378}
   - component: {fileID: 908892377}
   - component: {fileID: 908892376}
+  - component: {fileID: 908892379}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -3785,6 +3874,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908892374}
   m_CullTransparentMesh: 1
+--- !u!114 &908892379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908892374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &922654735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,6 +3898,7 @@ GameObject:
   - component: {fileID: 922654738}
   - component: {fileID: 922654737}
   - component: {fileID: 922654736}
+  - component: {fileID: 922654740}
   m_Layer: 5
   m_Name: MouseControl Button
   m_TagString: Untagged
@@ -3991,6 +4093,18 @@ RectTransform:
   m_AnchoredPosition: {x: -260, y: -45}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &922654740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922654735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925623739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +4117,7 @@ GameObject:
   - component: {fileID: 925623742}
   - component: {fileID: 925623741}
   - component: {fileID: 925623740}
+  - component: {fileID: 925623744}
   m_Layer: 5
   m_Name: SharedInputOutputPathway Button
   m_TagString: Untagged
@@ -4209,6 +4324,18 @@ RectTransform:
   m_AnchoredPosition: {x: 40, y: 80}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &925623744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925623739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &938085144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,6 +4728,7 @@ GameObject:
   - component: {fileID: 1010161050}
   - component: {fileID: 1010161048}
   - component: {fileID: 1010161051}
+  - component: {fileID: 1010161052}
   m_Layer: 0
   m_Name: Brain Models
   m_TagString: Untagged
@@ -4689,6 +4817,18 @@ MonoBehaviour:
   controlsPanel: {fileID: 969302283}
   minOrthographicSize: 0.02
   scale: 0.2
+--- !u!114 &1010161052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010161045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010460858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5434,6 +5574,8 @@ GameObject:
   - component: {fileID: 1166878002}
   - component: {fileID: 1166878001}
   - component: {fileID: 1166878000}
+  - component: {fileID: 1166878004}
+  - component: {fileID: 1166878005}
   m_Layer: 5
   m_Name: HippocampusStructure Button
   m_TagString: Untagged
@@ -5592,6 +5734,30 @@ RectTransform:
   m_AnchoredPosition: {x: -40, y: -40}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1166878004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166877999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1166878005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166877999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1167638890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5743,6 +5909,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183084373}
+  - component: {fileID: 1183084374}
+  - component: {fileID: 1183084375}
   m_Layer: 5
   m_Name: Model Buttons
   m_TagString: Untagged
@@ -5776,6 +5944,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1183084374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183084372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1183084375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183084372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197009262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 42a8d2209f8d5b220a6403da71e44678, type: 3}
@@ -7206,6 +7398,7 @@ GameObject:
   - component: {fileID: 1607312555}
   - component: {fileID: 1607312554}
   - component: {fileID: 1607312553}
+  - component: {fileID: 1607312557}
   m_Layer: 5
   m_Name: HippocampusFunction Button
   m_TagString: Untagged
@@ -7364,6 +7557,18 @@ RectTransform:
   m_AnchoredPosition: {x: 40, y: -40}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1607312557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607312552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631532078 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b8164e13ae9cc46ebc9201d8aed7deb, type: 3}
@@ -7459,6 +7664,7 @@ GameObject:
   - component: {fileID: 1687516256}
   - component: {fileID: 1687516255}
   - component: {fileID: 1687516254}
+  - component: {fileID: 1687516258}
   m_Layer: 5
   m_Name: Reset Button
   m_TagString: Untagged
@@ -7581,6 +7787,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1687516258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687516253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1712932855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: ad1444a9e9125048cb574d2953d8b711, type: 3}
@@ -8539,6 +8757,7 @@ GameObject:
   - component: {fileID: 2014380930}
   - component: {fileID: 2014380929}
   - component: {fileID: 2014380928}
+  - component: {fileID: 2014380932}
   m_Layer: 5
   m_Name: Areas Button
   m_TagString: Untagged
@@ -8614,6 +8833,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1010161052}
+        m_TargetAssemblyTypeName: ButtonDetector, Assembly-CSharp
+        m_MethodName: SetIsPointerOverButtonFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2014380929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8673,6 +8904,18 @@ RectTransform:
   m_AnchoredPosition: {x: -140, y: -45}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2014380932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014380927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2090540042
 GameObject:
   m_ObjectHideFlags: 0
@@ -8825,6 +9068,7 @@ GameObject:
   - component: {fileID: 2107805335}
   - component: {fileID: 2107805334}
   - component: {fileID: 2107805333}
+  - component: {fileID: 2107805336}
   m_Layer: 5
   m_Name: TouchControl Button
   m_TagString: Untagged
@@ -9019,3 +9263,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107805331}
   m_CullTransparentMesh: 1
+--- !u!114 &2107805336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107805331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f11c1112f033d8895acbe2ab71c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
